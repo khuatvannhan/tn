@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/indigo_700"
+    android:gravity="center"
+    tools:context="com.trangnguyen.edu.MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="570dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--android:background="@drawable/border">-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Tỉnh/Thành phố:"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/edCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txCity"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:ellipsize="start"
+                    android:hint="Chọn Tỉnh"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/edDistrict"
+                    android:paddingLeft="5dp"
+                    android:focusable="false"
+                    android:ems="10"
+                    android:drawableRight="@drawable/unfold"/>
+
+                <TextView
+                    android:id="@+id/txDistrict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/edCity"
+                    android:layout_marginTop="20dp"
+                    android:text="Quận/Huyện:"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/edDistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txDistrict"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:ellipsize="start"
+                    android:hint="Chọn Huyện"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/edNameSchool"
+                    android:paddingLeft="5dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:drawableRight="@drawable/unfold"/>
+
+                <TextView
+                    android:id="@+id/txNameSchool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/edDistrict"
+                    android:layout_marginTop="20dp"
+                    android:text="Trường:"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/edNameSchool"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txNameSchool"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:ellipsize="start"
+                    android:focusable="false"
+                    android:hint="Chọn Trường"
+                    android:nextFocusDown="@+id/edClass"
+                    android:paddingLeft="5dp"
+                    android:ems="10"
+                    android:drawableRight="@drawable/unfold"/>
+
+                <TextView
+                    android:id="@+id/txClass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/edNameSchool"
+                    android:layout_marginTop="20dp"
+                    android:text="Lớp:"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16dp" />
+
+                <RelativeLayout
+                    android:id="@+id/tbClassb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txClass">
+
+                    <EditText
+                        android:id="@+id/edClass"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/txRetypePass"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border"
+                        android:ellipsize="start"
+                        android:hint="1"
+                        android:inputType="textPassword"
+                        android:nextFocusDown="@+id/edClassName"
+                        android:paddingLeft="5dp" />
+
+                    <EditText
+                        android:id="@+id/edClassName"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/txRetypePass"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/border"
+                        android:ellipsize="start"
+                        android:hint="Tên Lớp"
+                        android:inputType="textPassword"
+                        android:nextFocusDown="@+id/edYearBirth"
+                        android:paddingLeft="5dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txYearBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tbClassb"
+                    android:layout_marginTop="20dp"
+                    android:text="Ngày Sinh"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/edYearBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txYearBirth"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:ellipsize="start"
+                    android:inputType="textPassword"
+                    android:nextFocusDown="@+id/edCapcha"
+                    android:paddingLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/txCapcha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/edYearBirth"
+                    android:layout_marginTop="20dp"
+                    android:text="Mã xác nhận"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/edCapcha"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txCapcha"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:ellipsize="start"
+                    android:inputType="textEmailAddress"
+                    android:nextFocusDown="@+id/btSignUp"
+                    android:paddingLeft="5dp" />
+
+                <Button
+                    android:id="@+id/btSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/edCapcha"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Tạo Tài Khoản"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

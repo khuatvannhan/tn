@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/indigo_700"
+    android:gravity="center"
+    tools:context="com.trangnguyen.edu.MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="570dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--android:background="@drawable/border">-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Họ tên:"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/edName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txName"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:ellipsize="start"
+                    android:hint="VD: Ngô Bảo Châu"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/edNameLogin"
+                    android:paddingLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/txNameLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/edName"
+                    android:layout_marginTop="20dp"
+                    android:text="Tên Đăng Nhập:"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/edNameLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txNameLogin"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:ellipsize="start"
+                    android:hint="VD: ngobaochau"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/edPass"
+                    android:paddingLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/txPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/edNameLogin"
+                    android:layout_marginTop="20dp"
+                    android:text="Mật Khẩu:"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/edPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txPass"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:ellipsize="start"
+                    android:hint="mật khẩu"
+                    android:inputType="textPassword"
+                    android:nextFocusDown="@+id/edRetypePass"
+                    android:paddingLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/txRetypePass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/edPass"
+                    android:layout_marginTop="20dp"
+                    android:text="Nhập lại mật khẩu:"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/edRetypePass"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txRetypePass"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:ellipsize="start"
+                    android:hint="Nhập lại mật khẩu"
+                    android:inputType="textPassword"
+                    android:nextFocusDown="@+id/edEmail"
+                    android:paddingLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/txEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/edRetypePass"
+                    android:layout_marginTop="20dp"
+                    android:text="Email:"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/edEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txEmail"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:ellipsize="start"
+                    android:hint="email"
+                    android:inputType="textEmailAddress"
+                    android:nextFocusDown="@+id/edNumberPhone"
+                    android:paddingLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/txNumberPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/edEmail"
+                    android:layout_marginTop="20dp"
+                    android:text="Số Điện thoại bố/mẹ:"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/edNumberPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txNumberPhone"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:ellipsize="start"
+                    android:hint="Điện Thoại"
+                    android:inputType="number"
+                    android:nextFocusDown="@+id/btNext"
+                    android:paddingLeft="5dp" />
+
+                <Button
+                    android:id="@+id/btNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/edNumberPhone"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Tiếp Theo"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

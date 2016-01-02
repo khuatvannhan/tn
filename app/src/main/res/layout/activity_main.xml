@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/indigo_700"
+    android:gravity="center"
+    tools:context="com.trangnguyen.edu.MainActivity">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!--android:background="@drawable/border">-->
+        <ImageView
+            android:id="@+id/imglogin"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/login" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/edAccount"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ellipsize="start"
+                android:paddingLeft="5dp"
+                android:nextFocusDown="@+id/edPassword" />
+
+            <EditText
+                android:id="@+id/edPassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ellipsize="start"
+                android:paddingLeft="5dp"
+                android:inputType="textPassword"
+                android:nextFocusDown="@+id/btLogin" />
+
+            <Button
+                android:id="@+id/btLogin"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:text="Đăng Nhập"
+                android:textSize="20dp"></Button>
+
+            <TextView
+                android:id="@+id/textSignUp"
+                android:text="Đăng ký tài khoản"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
